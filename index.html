@@ -1,76 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>My Beautiful Website</title>
-  <style>
-    /* Reset default margin and padding */
-    * {
-      margin: 0;
-      padding: 0;
-    }
-    
-    /* Set background color */
-    body {
-      background-color: #f2f2f2;
-    }
-    
-    /* Center page content */
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      text-align: center;
-    }
-    
-    /* Add some style to the header */
-    header {
-      background-color: #fff;
-      border-bottom: 1px solid #ccc;
-      padding: 10px 0;
-    }
-    
-    /* Style the main title */
-    h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-    
-    /* Style the sub-title */
-    h2 {
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
-    
-    /* Style the paragraph text */
-    p {
-      font-size: 18px;
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
-    
-    /* Add some style to the footer */
-    footer {
-      background-color: #fff;
-      border-top: 1px solid #ccc;
-      padding: 10px 0;
-    }
-  </style>
+	<title>MOVE Silicon</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: #0c2340;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			height: 80px;
+			padding: 0 20px;
+		}
+
+		h1 {
+			font-size: 28px;
+			margin: 0;
+			flex-grow: 1;
+		}
+
+		nav {
+			display: flex;
+			align-items: center;
+			height: 40px;
+			background-color: #dfe3e6;
+			padding: 10px 20px;
+		}
+
+		nav a {
+			color: #333;
+			text-decoration: none;
+			margin: 0 20px;
+			font-weight: bold;
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+
+		section {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 20px;
+			min-height: calc(100vh - 120px);
+		}
+
+		.card {
+			background-color: #fff;
+			border-radius: 4px;
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+			width: 300px;
+			margin: 20px;
+		}
+
+		.card img {
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+			border-top-right-radius: 4px;
+			border-top-left-radius: 4px;
+		}
+
+		.card-content {
+			padding: 20px;
+		}
+
+		h2 {
+			font-size: 24px;
+			margin: 0;
+			margin-bottom: 10px;
+		}
+
+		p {
+			font-size: 16px;
+			line-height: 1.5;
+			margin: 0;
+			margin-bottom: 20px;
+		}
+
+		.button {
+			background-color: #0c2340;
+			color: #fff;
+			display: inline-block;
+			padding: 10px 20px;
+			border-radius: 4px;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 16px;
+			margin-top: 20px;
+			transition: all 0.3s ease-in-out;
+		}
+
+		.button:hover {
+			transform: translateY(-3px);
+			box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+		}
+	</style>
 </head>
 <body>
-  <header>
-    <h1>My Beautiful Website</h1>
-    <h2>Welcome to my website!</h2>
-  </header>
-  
-  <div class="container">
-    <p>This is a paragraph of text on my beautiful website. Isn't it wonderful?</p>
-    <p>Here is another paragraph of text. I hope you enjoy your visit.</p>
-  </div>
-  
-  <footer>
-    <p>&copy; 2023 My Beautiful Website. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+	<header>
+		<h1>MOVE Silicon</h1>
+	</header>
 
+	<nav>
+		<a href="#">主页</a>
+		<a href="#">产品</a>
+		<a href="#">关于我们</a>
+		<a href="#">联系我们</a>
+	</nav>
+
+	<section>
+		<div class="card">
+			<img src="https://via.placeholder.com/300x200.png?text=Product+1" alt="Product 1">
+			<div class="card-content">
+				<h2>产品1</h2>
+				<p>这里是产品1的描述。Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut lobortis tortor. Nam feugiat bibendum enim.</p>
+				<a href="#" class="button">查看详情</a>
+			</div>
+		</div>
+
+		<div class="card">
+			<img src="https://via.placeholder.com/300x200.png?text=Product+2" alt="Product 2">
+			<div class="card-content">
+				<h2>产品2</h2>
+				<p>这里是产品2的描述。Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut lobortis tortor. Nam feugiat bibendum enim.</p>
+				<a href="#" class="button">查看详情</a>
+			</div>
+		</div>
+
+		<div class="card">
+			<img src="https://via.placeholder.com/300x200.png?text=Product+3" alt="Product 3">
+            <div class="card-content">
+            <h2>产品3</h2>
+            <p>这里是产品3的描述。Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut lobortis tortor. Nam feugiat bibendum enim.</p>
+            <a href="#" class="button">查看详情</a>
+            </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200.png?text=Product+4" alt="Product 4">
+                <div class="card-content">
+                    <h2>产品4</h2>
+                    <p>这里是产品4的描述。Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut lobortis tortor. Nam feugiat bibendum enim.</p>
+                    <a href="#" class="button">查看详情</a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200.png?text=Product+5" alt="Product 5">
+                <div class="card-content">
+                    <h2>产品5</h2>
+                    <p>这里是产品5的描述。Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut lobortis tortor. Nam feugiat bibendum enim.</p>
+                    <a href="#" class="button">查看详情</a>
+                </div>
+            </div>
+        </section>
+        </body>
+        </html>
